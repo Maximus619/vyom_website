@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyom_Website</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- End of Stylesheet -->
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a class="navbar-brand mr-auto" href="home.html"><img src="../assests/images/vyomlogo.jpg" height="30"
+                    width="41" /></a>
+
+            <div class="collapse navbar-collapse" id="Navbar01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item rounded-pill ml-2 shadow-lg border border-danger bg-primary d-inline">
+                        <a class="nav-link active text-dark" href="#"><i
+                                class="bi white bi-house-door mr-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item rounded-pill ml-2 border border-danger">
+                        <a class="nav-link text-dark" href="#"><i class="bi white bi-card-list mr-1"></i>About</a>
+                    </li>
+                    <li class="nav-item rounded-pill ml-2 border border-danger">
+                        <a class="nav-link text-dark" href="#"><i
+                                class="bi white bi-chat-right-dots mr-1"></i>Contact</a>
+                    </li>
+                    <li class="nav-item rounded-pill ml-2 border border-danger">
+                        <a class="nav-link text-dark" href="#"><i class="bi white bi-brush mr-1"></i>Editorial</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text">
+                <!--Sign-in modal(the popup)-->
+                <button id="mybtn1" class="btn btn-primary"><i class="bi bi-signin" aria-hidden="true"></i>Sign
+                    up</button>
+            </span>
+            <button class="navbar-toggler border-dark bi bi-list" type="button" data-bs-toggle="collapse"
+                data-bs-target="#Navbar01" aria-controls="Navbar01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-6 col-sm-4">
+                    <h1>व्योम, हिन्दी कला एवं साहित सनगठन |</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="header_carousel_container">
+        <div class="col-12 container-fluid">
+            <!--CAROUSEL-->
+            <div id="headercarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-danger">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="../assests/images/advertise.jpg" alt="Uthappizza">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../assests/images/advertise.jpg" alt="Buffalo">
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid " src="../assests/images/advertise.jpg" alt="Alberto">
+                    </div>
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-bs-target="#headercarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="Slide 1"></li>
+                        <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                        </li>
+                        <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                        </li>
+                    </ul>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" type="button" data-bs-target="#headercarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" type="button" data-bs-target="#headercarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+<!-- End of Scripts -->
+
+</html>

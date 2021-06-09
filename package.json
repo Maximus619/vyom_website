@@ -1,0 +1,20 @@
+{
+  "name": "vyom-website",
+  "version": "1.0.0",
+  "description": "Vyom Website",
+  "main": "home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VyomJSS",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/Maximus619/vyom_website/tree/anant"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  }
+}
