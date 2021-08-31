@@ -1,31 +1,439 @@
-.jumbotron {
-  position: relative;
-  background: none;
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.jumbotron:after {
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(21, 34, 43, 0.85);
+  padding: 10px 0;
+}
+
+#header .navbar-brand img{
+  margin: 3px;
+  padding: 0;
+  width: 4em;
+  height: 3.5em;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar-brand{
+  margin-right: 2rem;
+}
+.navbar-collapse li {
+  position: relative;
+}
+
+.navbar-collapse > ul > li {
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+.navbar-collapse a, .navbar-collapse a:focus {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar-collapse a i, .navbar-collapse a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar-collapse > ul > li > a:before {
   content: "";
-  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(https://source.unsplash.com/random);
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  right: 0;
+  background-color: #ff4a17;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-collapse a:hover:before, .navbar-collapse li:hover > a:before, .navbar-collapse .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar-collapse a:hover, .navbar-collapse .active, .navbar-collapse .active:focus, .navbar-collapse li:hover > a {
+  color: #fff;
+}
+
+.navbar-btn{
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+.signup{
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: none;
+}
+.signup:hover {
+  color: #fff;
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+.bi-list{
+  color:#eee;
+}
+/* Jumbotron */
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(https://source.unsplash.com/weekly?water) top center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
+  opacity: 1;
   z-index: -1;
 }
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  animation: fade-in 2s  ease-in-out;
+}
+@keyframes fade-in{
+  from {top: 600px; opacity: 0;}
+  to {top: 0px;}
+}
+#auto-generate-text{
+  width: 400px;
+  font-size: 18px;
+  color: antiquewhite;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 35px 10px 35px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #ff4a17;
+  border: 2px solid #ff4a17;
+}
+
+#hero .btn-get-started:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #ff4a17;
+}
+main{
+  width: 100vw;
+}
+/* Carousel */
 .header_carousel_container {
   margin-top: 60px;
   margin-bottom: 20px;
   width: 100vw;
-}
-.carousel-inner {
-  margin: 10px;
+  left: 0;
 }
 .carousel-item img {
   width: 100%;
-  height: fit-content;
+  height: 500px;
+}
+/* Top Poems */
+#top-poem{
+  padding: 0px 0px 25px 0px;
+}
+.top-poem-heading{
+  padding: 10px 0px 10px 0px;
+}
+.card{
+  max-width: 250px;
+  max-height: 450px;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  box-shadow: 0 40px 60px -6px rgb(59, 56, 56);
+  border: none;
+}
+.card-img-top{
+  border-top-right-radius: 55px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  padding: 30px 0px 30px 0px;
+}
+
+.card-desc {
+  display: flex;
+  font-size: 1.2rem;
+  position: absolute;
+  margin-bottom: 0;
+  left: 0;
+  height: 100%;
+  bottom: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  color: #eee;
+  background-color: rgb(49, 66, 44);
+  overflow-y: hidden;
+  transition: 0.8s ease-in-out;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+.round{
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+}
+
+
+/* 
+ */
+.word-heading{
+   padding: 10px 0px 15px 0px;
+   align-items: center;
+   justify-content: center;
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: chocolate;
+   font-style: italic;
+}
+.word-content{
+  padding: 20px 0px 35px 0px;
+   align-items: center;
+   justify-content: center;
+   font-style: italic;
+   font-size: 1.6rem;
+}
+
+/* 
+Team 
+*/
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+#team {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.founder-card{
+  margin-bottom: 1.2rem;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    transform: perspective(1000px);
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }

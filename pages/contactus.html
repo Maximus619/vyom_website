@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyom_Website</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../css/contact_style.css">
+    <link rel="stylesheet" href="../css/signin_modal.css">
+
+    <link rel="stylesheet" href="../css/footer.css" />
+    <!-- End of Stylesheet -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <button class=" navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar01"
+                aria-controls="Navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <a class="navbar-brand" href="home.html"><img class="rounded-circle" src="../assests/images/logo1.png"
+                    height="30" width="41" /></a>
+
+            <div class="collapse navbar-collapse" id="Navbar01">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="bi bi-house-door pr-1"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-brush pr-1 "></i>Editorial</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html"><i class="bi bi-card-list pr-1"></i>AboutUs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html"><i
+                                class="bi bi-chat-right-dots pr-1"></i>ContactUs</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <span class="navbar-btn ml-0">
+            <!--Sign-in modal(the popup)-->
+            <button id="mybtn1" class="btn btn-primary signup" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                    class="bi bi-person" aria-hidden="true"></i>Sign
+                up</button>
+        </span>
+    </nav>
+
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <div>
+                <h1> Contact for Event </h1>
+                <p>Contact 1</p>
+                <i class="fas fa-phone-alt"></i>: +852 1234 5678<br>
+            </div>
+        </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+    </div>
+    <!-- Modal -->
+    <div class="modal hide fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header row justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-control signin_form">
+                            <input type="text" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="form-control signin_form">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="btn1">
+                        <span class="noselect">Login</span>
+                    </div>
+                    <div class="signup-again-text">Don't have an account? <a data-bs-target="#exampleModal2"
+                            class="goto-signup-text" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</a></div>
+                </div>
+                <a data-bs-dismiss="modal" class="link-2"></a>
+            </div>
+        </div>
+    </div>
+    <div class="modal hide fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header row justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-control signin_form">
+                            <input type="text" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="form-control signin_form">
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="form-control signin_form">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="btn1">
+                        <span class="noselect">SignUp</span>
+                    </div>
+                    <div class="login-again-text">Already have an account? <a data-bs-target="#exampleModal"
+                            data-bs-dismiss="modal" class="goto-login-text" data-bs-toggle="modal">LogIn</a></div>
+                </div>
+                <a data-bs-dismiss="modal" class="link-2"></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="row row-content background">
+            <div class="container contact_container">
+                <div class="contact_form">
+                    <div class="col-12 mb-5">
+                        <h2>Send us your Feedback</h2>
+                    </div>
+                    <div class="col-12 ">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstname" name="firstname"
+                                        placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                        placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="telnum" class="col-12 col-md-2 col-form-label">Contact No.</label>
+                                <div class="col-md-10">
+                                    <input type="tel" class="form-control" id="telnum" name="telnum"
+                                        placeholder="Mobile number">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="emailid" name="emailid"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve"
+                                        value="">
+                                    <label for="approve" class="form-check-label">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <select class="form-control">
+                                    <option>Mobile</option>
+                                    <option>Email</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="feedback" id="feedback" cols="10"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-1 col-md-10">
+                                <button type="submit" class="btn btn-primary mt-2 send_btn">Send Feedback</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drops">
+                <div class="drop drop-1 d-sm-none d-none d-lg-block"></div>
+                <div class="drop drop-2 d-sm-none d-none d-lg-block"></div>
+            </div>
+        </section>
+        <footer id=" dk-footer" class="dk-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="dk-footer-box-info">
+                            <a href="home.html" class="footer-logo">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png"
+                                    alt="footer_logo" class="img-fluid">
+                            </a>
+                            <p class="footer-info-text">
+                                Reference site about Lorem Ipsum, giving information on its origins, as well as
+                                a random
+                                Lipsum generator.
+                            </p>
+                            <div class="footer-social-link">
+                                <h3>Follow us</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="facebook">
+                                                <i class="fab fa-facebook "></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="google-plus">
+                                                <i class="fab fa-google-plus"></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="linkedin">
+                                                <i class="fab fa-linkedin"></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Social link -->
+                        </div>
+                        <!-- End Footer info -->
+                        <div class="footer-awarad">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="contact-us">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marked-alt text-primary fa-lg" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info">
+                                        <h3>Noida India</h3>
+                                        <p>5353 Road Avenue</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="contact-us">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-volume text-primary fa-lg" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info">
+                                        <h3>123 456 7890</h3>
+                                        <p>Give us a call</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Contact Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget footer-left-widget">
+                                    <div class="section-heading1">
+                                        <h3>Useful Links</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our Team</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Faq</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>
+                            <!-- End col -->
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget">
+                                    <div class="section-heading">
+                                        <h3>Subscribe</h3>
+                                        <span class="animate-border border-black"></span>
+                                    </div>
+                                    <p>
+                                        <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                        Reference site about Lorem Ipsum, giving information on its origins, as
+                                        well.
+                                    </p>
+                                    <form action="#" class="d-flex myform">
+                                        <div class="form-row">
+                                            <div class="col dk-footer-form">
+                                                <input type="email" class="form-control" placeholder="Email Address">
+                                                <button type="submit">
+                                                    <i class="far fa-paper-plane"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- End form -->
+                                </div>
+                                <!-- End footer widget -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Widget Row -->
+            </div>
+            <!-- End Contact Container -->
+
+
+            <div class="copyright justify-content-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <span>Copyright © 2021, All Right Reserved VYOMTechnical</span>
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright-menu">
+                                <ul class="p-0">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Copyright Container -->
+            </div>
+            <!-- End Copyright -->
+            <!-- Back to top -->
+            <div id="back-to-top" class="back-to-top">
+                <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                    <i class="fas fa-angle-up"></i>
+                </button>
+            </div>
+            <!-- End Back to top -->
+        </footer>
+
+    </main>
+
+
+</body>
+<!-- Scripts -->
+<script src="../js/script.js"></script>
+<script src="../js/signin_script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+</script>
+<script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<!-- End of Scripts -->
+
+
+</html>

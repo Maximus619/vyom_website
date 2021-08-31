@@ -1,0 +1,259 @@
+
+/*Animation*/
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+  }
+.inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+.content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+}
+  
+/* Animation */
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.navbar-brand img{
+    margin: 3px;
+    padding: 0;
+    width: 4em;
+    height: 3.5em;
+  }
+  
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(21, 34, 43, 0.85);
+  padding: 10px 0;
+}
+/*
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar-brand{
+  margin-right: 2rem;
+}
+.navbar-collapse li {
+  position: relative;
+}
+
+.navbar-collapse > ul > li {
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+.navbar-collapse a, .navbar-collapse a:focus {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar-collapse a i, .navbar-collapse a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar-collapse > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  right: 0;
+  background-color: #ff4a17;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-collapse a:hover:before, .navbar-collapse li:hover > a:before, .navbar-collapse .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar-collapse a:hover, .navbar-collapse .active, .navbar-collapse .active:focus, .navbar-collapse li:hover > a {
+  color: #fff;
+}
+
+.navbar-btn{
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+.signup{
+  background-image: linear-gradient(to right, #108d6f, rgba(255,0,0,1));
+  border: none;
+}
+.signup:hover {
+  color: #fff;
+  background-image: linear-gradient(to left, #108d6f, rgba(255,0,0,1));
+  border-color: #108d6f;
+}
+
+.bi-list{
+  color:#eee;
+}
+/*-----------------------FeedBack Form----------------------------*/
+.background{
+  background: #fff;
+  padding-bottom: 100px;
+}
+.contact_container {
+  margin-top: 60px;
+}
+.contact_form {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1.5em;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.contact_form label {
+    font-weight: 500;
+    color: rgb(180, 7, 7);
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.contact_form input {
+    background: transparent;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.contact_form input:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(17, 16, 16, 0.2);
+}
+.contact_form:hover {
+    margin: 4px;
+}
+.send_btn:focus{
+  background-color: green;
+}
+::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.drop {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: all 0.2s ease;
+}
+.drop-1 {
+    height: 80px;
+    width: 80px;
+    top: 85%;
+    left: 20%;
+}
+.drop-2 {
+    height: 80px;
+    width: 80px;
+    top: 84%;
+    left: 77%;
+}
+
