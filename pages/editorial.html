@@ -17,55 +17,212 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-lg fixed bg-dark">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="navbar-brand d-lg-flex flex-row align-items-center flex-row-auto pl-3 pr-3 nav-img">
+                <a class="navbar-brand" href="home.html"><img class="rounded-circle" src="../assests/images/logo1.png"
+                        height="55" width="60" /></a>
+            </div>
+            <div class="flex-row justify-content-between align-items-center my-2 flex-row-fluid">
+                <ul class="nav flex-row none">
+                    <li class="nav-item mx-2 px-2" data-bs-toggle="tooltip" data-bs-palcement="right" title="Home">
+                        <a class="nav-link btn btn-outline-success btn-lg active" href="">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
 
+                    <li class="nav-item mx-2 px-2" data-bs-toggle="tooltip" title="Search">
+                        <a class="nav-link btn btn-outline-info btn-lg" href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2 px-2" data-bs-toggle="tooltip" title="Create">
+                        <a class="nav-link btn btn-outline-warning btn-lg" href=""><i class="fas fa-feather-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2 px-2" data-bs-toggle="tooltip" title="Timeline">
+                        <a class="nav-link btn btn-outline-danger btn-lg" href="">
+                            <i class="fas fa-fire-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-2 px-2" data-bs-toggle="tooltip" title="User Settings">
+                        <a href="#" class="nav-link btn btn-outline-secondary btn-lg">
+                            <i class="fas fa-user-cog"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="d-flex flex-column flex-root">
+    <div class="d-flex flex-column flex-root">
         <div class="d-flex flex-row flex-column-fluid page">
-            <div class="aside aside-left d-flex flex-column" id="left-aside">
-                <div class="aside-brand d-lg-flex flex-column align-items-center flex-column-auto pl-3 pr-3 nav-img">
-                    <a class="navbar-brand" href=""><img class="rounded-circle" src="../assests/images/logo1.png"
-                            height="40" width="45" /></a>
-                </div>
-                <div
-                    class="aside-nav d-flex flex-column justify-content-lg-center align-items-center flex-column-fluid">
-                    <ul class="nav flex-column none">
-                        <li class="nav-item mb-2 pb-2" data-bs-toggle="tooltip" data-bs-palcement="right" title="Home">
-                            <a class="nav-link btn btn-outline-success btn-lg active" href="">
-                                <i class="fas fa-home"></i>
-                            </a>
-                        </li>
+            <div
+                class="aside-nav d-flex flex-column justify-content-lg-center align-items-center flex-column-fluid py-5 pt-lg-0 pb-lg-20 ml-3">
 
-                        <li class="nav-item mb-2 pb-2" data-bs-toggle="tooltip" title="Search">
-                            <a class="nav-link btn btn-outline-info btn-lg" href="">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item mb-2 pb-2" data-bs-toggle="tooltip" title="Create">
-                            <a class="nav-link btn btn-outline-warning btn-lg" href=""><i
-                                    class="fas fa-feather-alt"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item mb-2 pb-2" data-bs-toggle="tooltip" title="Timeline">
-                            <a class="nav-link btn btn-outline-danger btn-lg" href="">
-                                <i class="fas fa-fire-alt"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item mb-2 pb-2" data-bs-toggle="tooltip" title="Profile">
-                            <a href="#" class="nav-link btn btn-outline-secondary btn-lg">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="aside-content flex-column-fluid pt-7 mt-5">
+                    <div class="card card-custom shadow-none gutter-b card-px-0">
+                        <!--begin::Header-->
+                        <div class="card-header border-0 pt-6">
+                            <h4 class="card-title align-items-start flex-column">
+                                <span class="card-label font-size-h4 text-dark-55">Contacts</span>
+                            </h4>
+                        </div>
+                        <!--begin::Body-->
+                        <div class="card-body pt-5">
+                            <!--begin::Item-->
+                            <div class="d-flex flex-wrap align-items-center pb-2">
+                                <!--begin::Title-->
+                                <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 mr-2">
+                                    <a href="#"
+                                        class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Prem
+                                        Chand</a>
+                                    <span class="text-muted font-weight-bold">Oil &amp; Gas</span>
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-wrap align-items-center pb-2">
+                                <!--begin::Title-->
+                                <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 mr-2">
+                                    <a href="#"
+                                        class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Prem
+                                        Chand</a>
+                                    <span class="text-muted font-weight-bold">Oil &amp; Gas</span>
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-wrap align-items-center pb-2">
+                                <!--begin::Title-->
+                                <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 mr-2">
+                                    <a href="#"
+                                        class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Prem
+                                        Chand</a>
+                                    <span class="text-muted font-weight-bold">Oil &amp; Gas</span>
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-wrap align-items-center pb-2">
+                                <!--begin::Title-->
+                                <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 mr-2">
+                                    <a href="#"
+                                        class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Prem
+                                        Chand</a>
+                                    <span class="text-muted font-weight-bold">Oil &amp; Gas</span>
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex flex-wrap align-items-center pb-2">
+                                <!--begin::Title-->
+                                <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 mr-2">
+                                    <a href="#"
+                                        class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Prem
+                                        Chand</a>
+                                    <span class="text-muted font-weight-bold">Oil &amp; Gas</span>
+                                </div>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Item-->
+                        </div>
+                        <!--end::Body-->
+                    </div>
+                    <div class="card card-custom shadow-none gutter-b card-px-0">
+                        <!--begin::Header-->
+                        <div class="card-header border-0 pt-6">
+                            <h3 class="card-title align-items-start flex-column">
+                                <span class="card-label font-weight-bolder font-size-h4 text-dark-75">Authors
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="card-toolbar">
+                            <!--end::Header-->
+                            <!--begin::Body-->
+                            <div class="card-body pt-5">
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-6">
+                                    <!--begin::Content-->
+                                    <div class="d-flex flex-wrap flex-row-fluid">
+                                        <!--begin::Text-->
+                                        <div class="d-flex flex-column pr-5 flex-grow-1">
+                                            <a href="#"
+                                                class="text-dark text-hover-primary mb-1 font-weight-bolder font-size-lg">Ana
+                                                Larson</a>
+                                            <span class="text-muted font-weight-bold">Writer</span>
+                                        </div>
+                                        <!--end::Text-->
+                                    </div>
+                                    <!--end::Content-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-6">
+                                    <!--begin::Content-->
+                                    <div class="d-flex flex-wrap flex-row-fluid">
+                                        <!--begin::Text-->
+                                        <div class="d-flex flex-column pr-5 flex-grow-1">
+                                            <a href="#"
+                                                class="text-dark text-hover-primary mb-1 font-weight-bolder font-size-lg">Ana
+                                                Larson</a>
+                                            <span class="text-muted font-weight-bold">Writer</span>
+                                        </div>
+                                        <!--end::Text-->
+                                    </div>
+                                    <!--end::Content-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-6">
+                                    <!--begin::Content-->
+                                    <div class="d-flex flex-wrap flex-row-fluid">
+                                        <!--begin::Text-->
+                                        <div class="d-flex flex-column pr-5 flex-grow-1">
+                                            <a href="#"
+                                                class="text-dark text-hover-primary mb-1 font-weight-bolder font-size-lg">Ana
+                                                Larson</a>
+                                            <span class="text-muted font-weight-bold">Writer</span>
+                                        </div>
+                                        <!--end::Text-->
+                                    </div>
+                                    <!--end::Content-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <div class="d-flex align-items-center mb-6">
+                                    <!--begin::Content-->
+                                    <div class="d-flex flex-wrap flex-row-fluid">
+                                        <!--begin::Text-->
+                                        <div class="d-flex flex-column pr-5 flex-grow-1">
+                                            <a href="#"
+                                                class="text-dark text-hover-primary mb-1 font-weight-bolder font-size-lg">Ana
+                                                Larson</a>
+                                            <span class="text-muted font-weight-bold">Writer</span>
+                                        </div>
+                                        <!--end::Text-->
+                                    </div>
+                                    <!--end::Content-->
+                                </div>
+                                <!--end::Item-->
+                            </div>
+                            <!--end::Body-->
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End Of Left Aside -->
+
             <div class="d-flex flex-column flex-row-fluid wrapper" id="center-wrapper">
                 <div class="content d-flex flex-column flex-column-fluid" id="center-content">
                     <div class="subheader py-4 pt-lg-0 pb-lg-10 ml-5" id="center-subheading">
-                        <div class="container d-flex flex-wrap">
+                        <div class="container d-flex flex-wrap pl-0">
                             <div class="d-flex  py-2 my-stories"><img src="../assests/images/vyomlogo.jpg"
                                     class="rounded-circle mx-2" alt="" height="35px" width="35px"></div>
                             <div class="d-flex py-2 stories">
@@ -93,10 +250,14 @@
                                         <img class="card-img-top p-2" src="../assests/images/carousel1.png"
                                             alt="Card image cap">
                                         <div class="card-body">
+                                            <i class="far fa-lg fa-heart my-2 mr-2 like"></i>
+                                            <i class="fas fa-lg fa-pencil-alt my-2 mr-2 comment"></i>
+                                            <i class="far fa-lg fa-paper-plane my-2 mr-2 share"></i>
                                             <h5 class="card-title">
                                                 <caption>This is a caption</caption>
                                             </h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
+                                            <p class="card-text">This is a wider card with supporting text below as
+                                                a
                                                 natural lead-in to additional content. This content is a little bit
                                                 longer.</p>
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins
@@ -109,6 +270,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End of middle content -->
+
             <div class="sidebar sidbar-right d-flex flex-row-auto flex-column bg-white">
                 <div class="sidebar-header flex-column-auto pt-5 pb-5 pt-lg-14 px-lg-14 ml-5">
                     <div class="d-flex justify-content-between">My Account</div>
@@ -118,8 +281,10 @@
                         <!--begin::Header-->
                         <div class="card-header border-0 pt-6">
                             <h3 class="card-title align-items-start flex-column">
-                                <span class="card-label font-weight-bolder font-size-h4 text-dark-75">Top Poets</span>
-                                <span class="text-muted mt-3 font-weight-bold font-size-lg">240,000 Total Poems</span>
+                                <span class="card-label font-weight-bolder font-size-h4 text-dark-75">Top
+                                    Poets</span>
+                                <span class="text-muted mt-3 font-weight-bold font-size-lg">240,000 Total
+                                    Poems</span>
                             </h3>
                         </div>
                         <!--begin::Body-->
@@ -269,7 +434,10 @@
                     </div>
                 </div>
             </div>
-    </section>
+            <!-- End of right sidebar -->
+
+        </div>
+    </div>
 </body>
 
 <!-- Scripts -->

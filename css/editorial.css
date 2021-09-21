@@ -1,19 +1,10 @@
+.navbar{
+    display: flow-root;
+}
 .navbar-brand{
     margin: 0;
 }
-.aside {
-    overflow: auto;
-    position: fixed;
-    top: 50px;
-    height: 850px;
-    left: 40px;
-    width: 100px;
-    z-index: 98;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: #181c32;
-    border-radius: .55rem;
-}
+
 .aside-nav{
     padding-top: 200px;
 }
@@ -35,14 +26,17 @@
 @media (min-width: 992px){
     .wrapper {
     margin: 40px 0;
-    margin-left: 140px;
     margin-right: 40px;
     -webkit-transition: margin-right .3s ease;
     transition: margin-right .3s ease;
     }
 }
-
-.container{
-    margin-left: 15px;
-    border: solid 2px grey;
+.like{
+    color: darkred;
+}
+.comment{
+    color: darkgreen;
+}
+.share{
+    color: darkcyan;
 }
