@@ -1,13 +1,22 @@
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Estonia&family=Raleway:wght@100&display=swap');
 
-html,body{
+html,
+body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('../images/Beating\ hearts.gif') no-repeat center;
+  z-index: 9999;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -23,12 +32,13 @@ html,body{
   padding: 10px 0;
 } */
 
-#header .navbar-brand img{
+#header .navbar-brand img {
   margin: 3px;
   padding: 0;
   width: 4em;
   height: 3.5em;
 }
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -43,19 +53,22 @@ html,body{
   list-style: none;
   align-items: center;
 }
-.navbar-brand{
+
+.navbar-brand {
   margin-right: 2rem !important;
 }
+
 .navbar-collapse li {
   position: relative;
 }
 
-.navbar-collapse > ul > li {
+.navbar-collapse>ul>li {
   white-space: nowrap;
   padding: 8px 12px;
 }
 
-.navbar-collapse a, .navbar-collapse a:focus {
+.navbar-collapse a,
+.navbar-collapse a:focus {
   display: flex;
   align-items: center;
   position: relative;
@@ -69,13 +82,14 @@ html,body{
   transition: 0.3s;
 }
 
-.navbar-collapse a i, .navbar-collapse a:focus i {
+.navbar-collapse a i,
+.navbar-collapse a:focus i {
   font-size: 15px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar-collapse > ul > li > a:before {
+.navbar-collapse>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -88,23 +102,28 @@ html,body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar-collapse a:hover:before, .navbar-collapse li:hover > a:before, .navbar-collapse .active:before {
+.navbar-collapse a:hover:before,
+.navbar-collapse li:hover>a:before,
+.navbar-collapse .active:before {
   visibility: visible;
   width: 100%;
 }
 
-.navbar-collapse a:hover, .navbar-collapse .active, .navbar-collapse .active:focus, .navbar-collapse li:hover > a {
+.navbar-collapse a:hover,
+.navbar-collapse .active,
+.navbar-collapse .active:focus,
+.navbar-collapse li:hover>a {
   color: rgb(0, 0, 0);
 }
 
-.navbar-btn{
+.navbar-btn {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 4px;
   color: rgb(0, 0, 0);
 }
 
-.content{
+.content {
   height: 700px;
   display: flex;
   margin-top: 15px;
@@ -112,25 +131,34 @@ html,body{
   margin-right: 10%;
   top: 15px;
   left: 15px;
-  
+
 }
-.content img{
+
+.content img {
   border-radius: 5%;
 }
 
-@keyframes fade-in{
-  from {top: 600px; opacity: 0;}
-  to {top: 0px;}
+@keyframes fade-in {
+  from {
+    top: 600px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+  }
 }
-#auto-generate-text{
+
+#auto-generate-text {
   width: 400px;
   font-size: 18px;
   color: rgb(94, 65, 28);
   text-align: center;
 }
-.typewrite{
+
+.typewrite {
   font-size: 25px;
-  font-family: merriweather_extendedLtIt,lailaregular,MehrNastaliqRegular;
+  font-family: merriweather_extendedLtIt, lailaregular, MehrNastaliqRegular;
 }
 
 /* Carousel */
@@ -139,6 +167,7 @@ html,body{
   width: 100vw;
   left: 0;
 }
+
 .carousel-item img {
   width: 100%;
   height: 500px;
@@ -148,15 +177,18 @@ html,body{
 .footer-social-link h3 {
   color: #fff;
   font-size: 24px;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
+
 .footer-social-link ul {
   list-style-type: none;
   padding: 0 10px;
 }
+
 .footer-social-link li {
-  display: inline-block; 
+  display: inline-block;
 }
+
 .footer-social-link a i {
   display: block;
   width: 40px;
@@ -166,45 +198,54 @@ html,body{
   line-height: 40px;
   background: #000;
   margin-right: 5px;
-  color: #fff; 
+  color: #fff;
 }
+
 .footer-social-link a i.facebook {
-    background-color: #3B5998; 
+  background-color: #3B5998;
 }
+
 .footer-social-link a i.twitter {
   background-color: #55ACEE;
 }
+
 .footer-social-link a i.youtube {
   background-color: #be1616;
 }
+
 .footer-social-link a i.linkedin {
-    background-color: #0976B4; 
-  }
-.footer-social-link a i.instagram {  
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); 
+  background-color: #0976B4;
 }
-.footer{
+
+.footer-social-link a i.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.footer {
   background-color: rgb(211, 200, 200);
   padding: 10px 0 0 0;
   align-items: center;
 }
-.right{
+
+.right {
   padding-right: 10px;
 }
 
 
-.home{
+.home {
   padding-top: 26px;
   font-size: 1.5em;
   text-align: justify;
   color: rgb(112, 56, 56);
 }
+
 @media (max-width: 420px) {
-  .left{
+  .left {
     margin: auto;
-    
+
   }
-  .right{
+
+  .right {
     margin: auto;
     width: 75%;
   }

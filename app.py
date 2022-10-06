@@ -6,10 +6,10 @@ import json
 app = Flask(__name__, static_url_path='')
 
 # local database connection using xampp
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/vyom'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/vyom'
 
 # online free database using https://www.freesqldatabase.com 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql6468004:FazEykrgDG@sql6.freesqldatabase.com:3306/sql6468004'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql6468004:FazEykrgDG@sql6.freesqldatabase.com:3306/sql6468004'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -17,6 +17,9 @@ app.secret_key = 'super-secret-key'
 
 with open('config.json', 'r') as c:
     params = json.load(c)["params"]
+
+# with open('team.json', 'a') as t:
+#     params = json.load(t)["teams"]
 
 
 class Contacts(db.Model):
@@ -61,15 +64,16 @@ def about():
 @ app.route("/contact", methods=['GET', 'POST'])
 def contact():
     if (request.method == 'POST'):
-        name_req = request.form.get('names')
-        email_req = request.form.get('email')
-        phone_req = request.form.get('phonenum')
-        message_req = request.form.get('message')
-        entry = Contacts(name=name_req, email=email_req,
-                         phonenum=phone_req, message=message_req, dateposted=datetime.now())
-        print(request.form['message'])
-        db.session.add(entry)
-        db.session.commit()
+        return redirect(url_for('contact'))
+        # name_req = request.form.get('names')
+        # email_req = request.form.get('email')
+        # phone_req = request.form.get('phonenum')
+        # message_req = request.form.get('message')
+        # entry = Contacts(name=name_req, email=email_req,
+        #                  phonenum=phone_req, message=message_req, dateposted=datetime.now())
+        # print(request.form['message'])
+        # db.session.add(entry)
+        # db.session.commit()
     return render_template('contactus.html')
 
 

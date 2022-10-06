@@ -1,0 +1,28 @@
+{
+    "team": [
+        {
+            "id": 0,
+            "name": "Aman",
+            "image": "./static/images/team/Aman.png",
+            "designation": "Chief Epicurious Officer"
+        },
+        {
+            "id": 1,
+            "name": "anant",
+            "image": "./static/images/team/Aman.png",
+            "designation": "Chsadief Epicurious Officer"
+        },
+        {
+            "id": 2,
+            "name": "Aaa",
+            "image": "./static/images/team/Aman.png",
+            "designation": "Chieaf Epicurious Officer"
+        },
+        {
+            "id": 3,
+            "name": "Amaaaan",
+            "image": "./static/images/team/Aman.png",
+            "designation": "Chiefd Epicurious Officer"
+        }
+    ]
+}

@@ -9,14 +9,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome_css/all.css') }}">
+    <!-- End of Stylesheet -->
+
 </head>
 
 <body>
-    <div class="container">
+
+
+    <div style="display:flex;justify-content: center; margin: 10px;">
+        <a href="logout" class="btn-lg btn-success" type="button">Logout</a>
+    </div>
+
+    <div id="form-data" class="container">
         <h1 class="text-center mx-3">Admin Panel</h1>
-        <div style="display:flex;justify-content: end;">
-            <a href="logout" class="btn btn-success" type="button">Logout</a>
-        </div>
     </div>
 
     <div class="container mt-2">

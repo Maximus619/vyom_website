@@ -18,7 +18,8 @@
 
 </head>
 
-<body>
+<body onload="preload()">
+    <div id="loading"></div>
     <nav class="navbar navbar-expand-lg" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="/"><img class="rounded-circle" src="../images/icons/logo_rect.png" height="35"
@@ -120,7 +121,7 @@
                         </li>
                     </ul>
                     <div class="right pt-2">
-                        <span>Copyright © 2021, All Right Reserved VYOMTechnical</span>
+                        <a href="admin">Copyright © 2022, All Right Reserved VYOMTechnical</a>
                     </div>
                 </div>
             </div>
@@ -138,6 +139,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     </script>
     <script src="{{ url_for('static', filename='js/fontawesome_js/all.js') }}"></script>
+    <script>
+
+        const date = new Date();
+
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let currentDate = `${day}-${month}-${year}`;
+        document.getElementById('date_posted').defaultValue = currentDate;
+        var form = document.getElementById("sheetdb-form");
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            })
+        })
+        form.reset();
+        // document.getElementById('date_posted').value = currentDate;
+    </script>
+
     <!-- End of Scripts -->
 
 </body>

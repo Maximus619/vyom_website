@@ -3,54 +3,57 @@
 active
 {% endblock active_home %}
 {% block body %}
-
-<section>
-    <div class="container home">
-        Vyom is the official Hindi literature society of JSSATE Noida. Main vision of the society is to spread awareness
-        and interest for Hindi language and literature in the campus community and the society. All the Hindi literary
-        events held in the campus are organized by us.
-    </div>
-</section>
-<section class="header_carousel_container">
-    <!--CAROUSEL-->
-    <div id="headercarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner text-danger">
-            <div class="carousel-item active">
-                <img class="d-block img-fluid" src="../assests/images/carousel1.png" alt="">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block img-fluid" src="../assests/images/carousel2.png" alt="">
-            </div>
-            <div class="carousel-item ">
-                <img class="d-block img-fluid " src="../assests/images/carousel3.png" alt="">
-            </div>
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-bs-target="#headercarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></li>
-                <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="1" aria-label="Slide 2">
-                </li>
-                <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="2" aria-label="Slide 3">
-                </li>
-            </ul>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" type="button" data-bs-target="#headercarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" type="button" data-bs-target="#headercarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
+<div>
+    <section>
+        <div class="container home">
+            Vyom is the official Hindi literature society of JSSATE Noida. Main vision of the society is to spread
+            awareness
+            and interest for Hindi language and literature in the campus community and the society. All the Hindi
+            literary
+            events held in the campus are organized by us.
         </div>
-    </div>
-</section>
-<hr>
-<section>
-    <div class="container justify-content-center">
-        <p id="auto-generate-text text-danger" class="typewrite text-center text-danger" data-period="2000"
-            data-type='["कोई समझे तो एक बात कहूँ ", "इश्क़ तौफ़ीक़ है गुनाह नहीं", "काग़ज़ में दब के मर गए कीड़े किताब के", "दीवाना बे-पढ़े-लिखे मशहूर हो गया"]'>
-        </p>
-    </div>
-</section>
+    </section>
+    <section class="header_carousel_container">
+        <!--CAROUSEL-->
+        <div id="headercarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-danger">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="../assests/images/carousel1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="../assests/images/carousel2.png" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block img-fluid " src="../assests/images/carousel3.png" alt="">
+                </div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-bs-target="#headercarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></li>
+                    <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    </li>
+                    <li type="button" data-bs-target="#headercarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                    </li>
+                </ul>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" type="button" data-bs-target="#headercarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" type="button" data-bs-target="#headercarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container justify-content-center">
+            <p id="auto-generate-text text-danger" class="typewrite text-center text-danger" data-period="2000"
+                data-type='["कोई समझे तो एक बात कहूँ ", "इश्क़ तौफ़ीक़ है गुनाह नहीं", "काग़ज़ में दब के मर गए कीड़े किताब के", "दीवाना बे-पढ़े-लिखे मशहूर हो गया"]'>
+            </p>
+        </div>
+    </section>
+</div>
 
 <script>
     var TxtType = function (el, toRotate, period) {
@@ -95,6 +98,9 @@ active
     };
 
     window.onload = function () {
+        document.getElementById("loading").style.display = 'none';
+
+
         var elements = document.getElementsByClassName('typewrite');
         for (var i = 0; i < elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
@@ -113,5 +119,6 @@ active
 
 
 </script>
+
 
 {% endblock body %}

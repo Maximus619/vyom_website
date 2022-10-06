@@ -14,25 +14,34 @@ active
                     <h2>Contact-Us</h2>
                 </div>
                 <div class="col-12 ">
-                    <form name="sentMessage" action="/contact" method="post" novalidate>
+                    <form name="sentMessage" action="https://sheetdb.io/api/v1/gszavpxnm4xu4" method="post"
+                        id="sheetdb-form" novalidate>
                         <div class="form-group row">
                             <label for="name" class="col-md-2 col-form-label">Name</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="name" name="names" placeholder="Name">
+                                <input type="text" class="form-control" id="name" name="data[name]" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-md-2 col-form-label">Email</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="text" class="form-control" id="email" name="data[email]"
+                                    placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="telnum" class="col-12 col-md-2 col-form-label" pattern="[0-9]{10}">Mobile
+                            <label for="mobile" class="col-12 col-md-2 col-form-label" pattern="[0-9]{10}">Mobile
                                 number</label>
                             <div class="col-md-10">
-                                <input type="tel" class="form-control" id="telnum" name="phonenum"
+                                <input type="tel" class="form-control" id="mobile" name="data[mobile]"
                                     placeholder="Mobile number">
+                            </div>
+                        </div>
+                        <div class="form-group row" style="display: none;">
+                            <label for="date_posted" class="col-12 col-md-2 col-form-label"
+                                pattern="[0-9]{10}">date_posted</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="date_posted" name="data[date_posted]">
                             </div>
                         </div>
                 </div>
@@ -40,7 +49,8 @@ active
                     <div class="form-group row">
                         <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
                         <div class="col-md-6">
-                            <textarea class="form-control" name="message" id="feedback" cols="10" rows="5"></textarea>
+                            <textarea class="form-control" name="data[feedback]" id="feedback" cols="10"
+                                rows="5"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -54,4 +64,5 @@ active
         </div>
     </section>
 </main>
+
 {% endblock body %}
