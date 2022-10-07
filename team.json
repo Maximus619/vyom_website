@@ -1,28 +1,173 @@
 {
-    "team": [
+    "teams": [
         {
             "id": 0,
-            "name": "Aman",
-            "image": "./static/images/team/Aman.png",
-            "designation": "Chief Epicurious Officer"
+            "name": "अनिकेश सिंह",
+            "image": "/images/team/anikesh.png ",
+            "height": "300px",
+            "width": "320px",
+            "designation": "अध्यक्ष",
+            "insta": "https://www.instagram.com/anikesh256/"
         },
         {
             "id": 1,
-            "name": "anant",
-            "image": "./static/images/team/Aman.png",
-            "designation": "Chsadief Epicurious Officer"
+            "name": "मंथन श्रीवास्तव",
+            "image": "/images/team/manthan.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "स्वतन्त्र प्रभार",
+            "insta": "https://www.instagram.com/__lala_19/"
         },
         {
             "id": 2,
-            "name": "Aaa",
-            "image": "./static/images/team/Aman.png",
-            "designation": "Chieaf Epicurious Officer"
+            "name": "उत्सव अरोरा",
+            "image": "/images/team/utsav.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "उपाध्यक्ष",
+            "insta": "https://www.instagram.com/utsav__arora_/"
         },
         {
             "id": 3,
-            "name": "Amaaaan",
-            "image": "./static/images/team/Aman.png",
-            "designation": "Chiefd Epicurious Officer"
+            "name": "अपराजिता चौधरी",
+            "image": "/images/team/aprajita.png",
+            "designation": "सचिव",
+            "insta": "https://www.instagram.com/aprajita_2002/"
+        },
+        {
+            "id": 4,
+            "name": "प्राची सिंह",
+            "image": "/images/team/prachi.png",
+            "designation": "तकनीकी विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/notthegirlnextdoor3/"
+        },
+        {
+            "id": 5,
+            "name": "अनंत कुमार गुप्ता",
+            "image": "/images/team/anant_gupta.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "तकनीकी विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/11_anant/"
+        },
+        {
+            "id": 6,
+            "name": "अमित यादव",
+            "image": "/images/team/amit_yadav.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "लेखन एवं सम्पादन विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/i_vyomyadav/"
+        },
+        {
+            "id": 7,
+            "name": "अनामिका मिश्रा",
+            "image": "/images/team/anamika.png",
+            "designation": "कला विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/anamika__1822/"
+        },
+        {
+            "id": 8,
+            "name": "आदित्य कुमार",
+            "image": "/images/team/aditya.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "कला विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/_im.aditya12/"
+        },
+        {
+            "id": 9,
+            "name": "स्वर्णिमा सिंह",
+            "image": "/images/team/swarnima.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "व्यवस्थापिका विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/__._mysterious_/"
+        },
+        {
+            "id": 10,
+            "name": "प्रद्युम्न यादव",
+            "image": "/images/team/pradumn.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "व्यवस्थापिका विभाग अध्यक्ष",
+            "insta": "https://www.instagram.com/prudent_pradhumn/"
+        },
+        {
+            "id": 11,
+            "name": "अंबिका सिंह",
+            "image": "/images/team/ambika.png",
+            "height": "300px",
+            "width": "320px",
+            "designation": "सर्जनात्मक अध्यक्ष",
+            "insta": "https://www.instagram.com/_ambikaaa__/"
+        },
+        {
+            "id": 12,
+            "name": "स्वाती मिश्रा",
+            "image": "/images/team/swati.png",
+            "designation": "सर्जनात्मक अध्यक्ष",
+            "insta": "https://www.instagram.com/swatirenukaindra/"
+        },
+        {
+            "id": 13,
+            "name": "शिवा कुशवाहा",
+            "image": "/images/team/shiva.png",
+            "designation": "अनुसंधान और विकास अध्यक्ष",
+            "insta": "https://www.instagram.com/c_wa.143/"
+        },
+        {
+            "id": 14,
+            "name": "तौफीक आलम",
+            "image": "/images/team/taufiq.png",
+            "designation": "अनुसंधान और विकास अध्यक्ष",
+            "insta": "https://www.instagram.com/safar_with_taufique/"
+        },
+        {
+            "id": 15,
+            "name": "नित्या सिंह",
+            "image": "/images/team/nitya.png",
+            "designation": "सामाजिक और पदोन्नति अध्यक्ष",
+            "insta": "https://instagram.com"
+        },
+        {
+            "id": 16,
+            "name": "कनिष्का",
+            "image": "/images/team/kaniska.png",
+            "designation": "सामाजिक और पदोन्नति अध्यक्ष",
+            "insta": "https://www.instagram.com/its_kanishka25/"
+        },
+        {
+            "id": 17,
+            "name": "प्रियांशु श्रीवास्तव",
+            "image": "/images/team/priyanshu.png",
+            "designation": "कोषाध्यक्ष",
+            "insta": "https://www.instagram.com/priyanshu_shri/"
+        },
+        {
+            "id": 18,
+            "name": "आयुशी विश्नोई",
+            "image": "/images/team/ayushi.png",
+            "height": "300x",
+            "width": "320px",
+            "designation": "आंतरिक प्रसंग अध्यक्ष",
+            "insta": "https://www.instagram.com/aayushii_vishnoii/"
+        },
+        {
+            "id": 19,
+            "name": "सौरव कुमार",
+            "image": "/images/team/sourav.png",
+            "height": "300x",
+            "width": "320px",
+            "designation": "विदेशीय प्रसंग अध्यक्ष",
+            "insta": "https://www.instagram.com/etherious_dragneel_/"
+        },
+        {
+            "id": 20,
+            "name": "आशीष कुमार गुप्ता",
+            "image": "/images/team/ashish.png",
+            "designation": "प्रायोजन अध्यक्ष",
+            "insta": "https://www.instagram.com/ashishgupta_._/"
         }
     ]
 }

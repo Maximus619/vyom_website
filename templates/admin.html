@@ -17,7 +17,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome_css/all.css') }}">
     <!-- End of Stylesheet -->
-
 </head>
 
 <body>
@@ -30,33 +29,11 @@
     <div id="form-data" class="container">
         <h1 class="text-center mx-3">Admin Panel</h1>
     </div>
-
     <div class="container mt-2">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Sno.</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone no.</th>
-                    <th>Message</th>
-                    <th>Date Posted</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for form in forms %}
-                <tr>
-                    <td>{{form.sno}}</td>
-                    <td>{{form.name}}</td>
-                    <td>{{form.email}}</td>
-                    <td>{{form.phonenum}}</td>
-                    <td>{{form.message}}</td>
-                    <td>{{form.dateposted}}</td>
-                </tr>
-                {% endfor %}
+        <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjld3E6IilC4qpFzJeyDlVi4dxqBo2-osVYGKo284pPYo0CWEDtl8m2Gtt9-fLvQq3Ht1lpgKh3WEj/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+            style="height: 700px; width:100%;"> </iframe>
 
-            </tbody>
-        </table>
     </div>
 
 </body>

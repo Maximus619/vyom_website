@@ -6,24 +6,30 @@ active
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
 <div class="container">
+
     <div class="cards">
+        {% for team in teams %}
         <div class="card">
-            <span class="card-header" style="background-image: url('../images/team/Shivanshu.png')">
+            <span class="card-header">
+                <img src='{{team["image"]}}' alt="N" height='{{team["height"]}}' />
                 <span class="card-title">
-                    <h3> शिवांशू सचान</h3>
+                    <h3> {{team["name"]}}</h3>
                 </span>
             </span>
             <span class="card-summary">
-                अध्यक्ष
+                {{team["designation"]}}
             </span>
             <span class="card-meta">
                 <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
+                    <li><a href="{{team['insta']}}" class="bi bi-instagram"></a>
+                    </li>
                 </ul>
             </span>
         </div>
+        {% endfor %}
 
-        <div class="card" href="#">
+        <!-- <div class="card" href="#">
+
             <span class="card-header" style="background-image: url('../images/team/Adarsh.JPG');">
                 <span class="card-title">
                     <h3>आदर्श सिंह</h3>
@@ -37,9 +43,9 @@ active
                     <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
                 </ul>
             </span>
-        </div>
+        </div> -->
 
-        <div class="card" href="#">
+        <!-- <div class="card" href="#">
             <span class="card-header" style="background-image: url('../images/team/Rishabh.png');">
                 <span class="card-title">
                     <h3>ऋषभ श्रीवास्तव</h3>
@@ -53,7 +59,7 @@ active
                     <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
                 </ul>
             </span>
-        </div>
+        </div> -->
 
         <!-- <div class="card" href="#">
             <span class="card-header" style="background-image: url('../images/team/Mritunjay.png')">
@@ -183,6 +189,12 @@ active
             </span>
         </div> -->
     </div>
+    <!-- <div>
+        {% for team in teams %}
+        {{team["id"]}} <br>
+        {% endfor %}
+
+    </div> -->
 </div>
 <hr class="hr-text" data-content="Technical Team">
 <div class="container">
@@ -198,8 +210,24 @@ active
             </span>
             <span class="card-meta">
                 <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a href="https://www.instagram.com/11_anant"
-                            class="bi bi-instagram "></a></li>
+                    <li><a href="https://www.linkedin.com/in/anantkumargupta/" class="bi bi-linkedin pr-1"></a> <a
+                            href="https://www.instagram.com/11_anant" class="bi bi-instagram "></a></li>
+                </ul>
+            </span>
+        </div>
+
+        <div class="card" href="#">
+            <span class="card-header" style="background-image: url('../images/team/Aman.png');">
+                <span class="card-title">
+                    <h3>अमन राय</h3>
+                </span>
+            </span>
+            <span class="card-summary">
+                Ex-Editorial Head
+            </span>
+            <span class="card-meta">
+                <ul class="list-unstyled">
+                    <li> <a href="https://www.instagram.com/vishnu_sthakur/" class="bi bi-instagram"></a></li>
                 </ul>
             </span>
         </div>
@@ -215,7 +243,7 @@ active
             </span>
             <span class="card-meta">
                 <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
+                    <li> <a href="https://www.instagram.com/vishnu_sthakur/" class="bi bi-instagram"></a></li>
                 </ul>
             </span>
         </div>
