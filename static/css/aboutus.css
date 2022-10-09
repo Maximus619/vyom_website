@@ -19,9 +19,11 @@
   } */
   .sample-section-wrap {
     margin-top: 10px;
-    color: aliceblue;
+    font-size: 17.5px;
+    font-weight: 400;
+    color: #1d2124;
     position: relative;
-    background-color: rgb(199, 104, 104);
+    background-color: #ffc107;
     opacity: 1;
   }
 
