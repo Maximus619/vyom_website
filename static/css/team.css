@@ -86,7 +86,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+<<<<<<< HEAD
   /* background-color: rgba(255, 255, 255, 0.35); */
+=======
+  background-color: rgba(255, 255, 255, 0.35);
+>>>>>>> 29559fc1ed24387c6184ff1bcf9cbd11eca0c137
   background-blend-mode: overlay;
   -moz-border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px;
