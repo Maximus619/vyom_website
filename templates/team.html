@@ -10,198 +10,30 @@ active
     <div class="cards">
         {% for team in teams %}
         <div class="card">
-            <span class="card-header">
-                <img src='{{team["image"]}}' alt="N" height='{{team["height"]}}' />
-                <span class="card-title">
-                    <h3> {{team["name"]}}</h3>
-                </span>
+            <span class="card-header"><img src='{{team["image"]}}' alt="N" height='{{team["height"]}}'
+                    width='{{team["width"]}}' /></span>
+            <span class="card-title">
+                <h3> {{team["name"]}}</h3>
             </span>
             <span class="card-summary">
                 {{team["designation"]}}
             </span>
             <span class="card-meta">
                 <ul class="list-unstyled">
-                    <li><a href="{{team['insta']}}" class="bi bi-instagram"></a>
+                    <li><a href="{{team[' insta']}}" class="bi bi-instagram"></a>
                     </li>
                 </ul>
             </span>
         </div>
         {% endfor %}
-
-        <!-- <div class="card" href="#">
-
-            <span class="card-header" style="background-image: url('../images/team/Adarsh.JPG');">
-                <span class="card-title">
-                    <h3>आदर्श सिंह</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                स्वतन्त्र प्रभार
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div> -->
-
-        <!-- <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/Rishabh.png');">
-                <span class="card-title">
-                    <h3>ऋषभ श्रीवास्तव</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                तकनीकी विभाग अध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div> -->
-
-        <!-- <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/Mritunjay.png')">
-                <span class="card-title">
-                    <h3>मृत्युंजय सिंह</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                उपाध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div> -->
-
-        <!-- <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/Aman.png');">
-                <span class="card-title">
-                    <h3>अमन राय</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                लेखन एवं सम्पादन विभाग अध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/RahulNamdev.png');">
-                <span class="card-title">
-                    <h3>राहुल नामदेव</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                सचिव
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url(http://placeimg.com/400/250/nature);">
-                <span class="card-title">
-                    <h3>हर्षिता पीयूष</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                कला विभाग अध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/Shubham.png');">
-                <span class="card-title">
-                    <h3>शुभम सिंह</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                व्यवस्थापिका विभाग अध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/RahulSingh.png');">
-                <span class="card-title">
-                    <h3>राहुल सिंह</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                अनुसन्धान एवं विकास अध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url('../images/team/Saurabh.png');">
-                <span class="card-title">
-                    <h3>सौरभ यादव</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                सामाजिक एवं प्रचार प्रमुख
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div>
-
-        <div class="card" href="#">
-            <span class="card-header" style="background-image: url(http://placeimg.com/400/400/tech);">
-                <span class="card-title">
-                    <h3>समद खान</h3>
-                </span>
-            </span>
-            <span class="card-summary">
-                वित्तीय अध्यक्ष/कोषाध्यक्ष
-            </span>
-            <span class="card-meta">
-                <ul class="list-unstyled">
-                    <li><a class="bi bi-linkedin pr-1"></a> <a class="bi bi-instagram"></a></li>
-                </ul>
-            </span>
-        </div> -->
     </div>
-    <!-- <div>
-        {% for team in teams %}
-        {{team["id"]}} <br>
-        {% endfor %}
-
-    </div> -->
 </div>
 <hr class="hr-text" data-content="Technical Team">
 <div class="container">
     <div class="cards">
         <div class="card">
             <span class="card-header" style="background-image: url('../images/team/Anant1.png')">
-                <span class="card-title">
+                <span class="card-titles">
                     <h3> अनंत कुमार गुप्ता</h3>
                 </span>
             </span>
@@ -218,7 +50,7 @@ active
 
         <div class="card" href="#">
             <span class="card-header" style="background-image: url('../images/team/Aman.png');">
-                <span class="card-title">
+                <span class="card-titles">
                     <h3>अमन राय</h3>
                 </span>
             </span>
@@ -234,7 +66,7 @@ active
 
         <div class="card" href="#">
             <span class="card-header" style="background-image: url('../images/team/Vishnu.png');">
-                <span class="card-title">
+                <span class="card-titles">
                     <h3>विष्णु सिंह</h3>
                 </span>
             </span>

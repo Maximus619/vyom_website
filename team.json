@@ -31,6 +31,8 @@
             "id": 3,
             "name": "अपराजिता चौधरी",
             "image": "/images/team/aprajita.png",
+            "height": "350px",
+            "width": "380px",
             "designation": "सचिव",
             "insta": "https://www.instagram.com/aprajita_2002/"
         },
@@ -38,6 +40,8 @@
             "id": 4,
             "name": "प्राची सिंह",
             "image": "/images/team/prachi.png",
+            "height": "500px",
+            "width": "320px",
             "designation": "तकनीकी विभाग अध्यक्ष",
             "insta": "https://www.instagram.com/notthegirlnextdoor3/"
         },

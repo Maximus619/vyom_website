@@ -14,8 +14,8 @@ active
                     <h2>Contact-Us</h2>
                 </div>
                 <div class="col-12 ">
-                    <form name="sentMessage" action="https://sheetdb.io/api/v1/gszavpxnm4xu4" method="post"
-                        id="sheetdb-form" novalidate>
+                    <form name="myForm" action="https://sheetdb.io/api/v1/gszavpxnm4xu4" method="post" id="sheetdb-form"
+                        required>
                         <div class="form-group row">
                             <label for="name" class="col-md-2 col-form-label">Name</label>
                             <div class="col-md-10">
@@ -60,6 +60,12 @@ active
                     </div>
                 </div>
                 </form>
+                <p id="thank-you-message">
+                    Thank you for contacting us. We will be in touch with you very soon.
+                </p>
+                <p id="error-message">
+                    cannot be Empty!
+                </p>
             </div>
         </div>
     </section>

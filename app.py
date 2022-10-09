@@ -63,17 +63,17 @@ def about():
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-    if request.method == "POST":
-        return redirect(url_for("contact"))
-        # name_req = request.form.get('names')
-        # email_req = request.form.get('email')
-        # phone_req = request.form.get('phonenum')
-        # message_req = request.form.get('message')
-        # entry = Contacts(name=name_req, email=email_req,
-        #                  phonenum=phone_req, message=message_req, dateposted=datetime.now())
-        # print(request.form['message'])
-        # db.session.add(entry)
-        # db.session.commit()
+    # if request.method == "POST":
+    #     alert("Success")
+    # name_req = request.form.get('names')
+    # email_req = request.form.get('email')
+    # phone_req = request.form.get('phonenum')
+    # message_req = request.form.get('message')
+    # entry = Contacts(name=name_req, email=email_req,
+    #                  phonenum=phone_req, message=message_req, dateposted=datetime.now())
+    # print(request.form['message'])
+    # db.session.add(entry)
+    # db.session.commit()
     return render_template("contactus.html")
 
 
